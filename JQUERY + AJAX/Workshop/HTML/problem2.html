@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+    <!-- 1. Create a jquery plugin.
+    2. Simple Animation [Opacity]
+    3. It should be chainable.
+    4. The animation should be applied on the Tags.
+    5. You have to create it in seprate js file and use it t on your html page.
+     -->
+    <div id="div"></div>
+    <br>
+    <button>Click Here</button>
+    <p id="p1">Welcome to my kingdom!!!</p>
+    <p id="p2">Welcome to my kingdom!!!</p>
+
+    <script src="../JS/jquery-hello.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#div').hello();
+            $("button").click(function() {
+            $("#p1").para1Animation();
+            $("#p2").para2Animation();
+            });
+        });
+        jQuery('#div').css('opacity',0.5);
+    </script>
+</body>
+</html>

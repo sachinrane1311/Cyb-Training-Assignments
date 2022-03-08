@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style>
+        #getData {
+            width: 200px;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #4f4d4d;
+        }
+        </style>
+</head>
+<body>
+    <h2>Drag and Drop API</h2>
+    <div 
+    id="getData" 
+    ondrop="drop(event)" 
+    ondragover="allowDrop(event)">
+    </div>
+    <br>
+    <img 
+    id="dragData" 
+    src="D:\Assignment\HTML5 -Assignment\cybageLogo.jpg" 
+    alt="cybageImg" 
+    draggable="true" 
+    ondragstart="drag(event)"
+    width="200"
+    height="150">
+
+    <script src="./Que07.js"></script>
+</body>
+</html>

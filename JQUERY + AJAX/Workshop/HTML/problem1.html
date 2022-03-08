@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+    
+</head>
+<body>
+    <!-- 1.Create a table dynamically [5,5] - Using ab object array.
+    2. Background color the rows at even place [your choice]. -->
+    
+    <div id="dynamicTable">
+    </div>
+    <script>
+        //Create table
+    var $table = $('<table>');
+    $table
+    .append('<thead>').children('thead')
+    .append('<tr/>').children('tr')
+    .append('<th>Name</th><th>Email</th><th>EmpNo</th><th>Phone</th><th>Address</th>');
+
+    //tbody
+    var $tbody = $table.append('<tbody />').children('tbody');
+
+    // add row
+    $tbody.append('<tr />').children('tr:last')
+    .append("<td>Praveen</td>")
+    .append("<td>praveen@gmail.com</td>")
+    .append("<td>26199</td>")
+    .append("<td>7383769520</td>")
+    .append("<td>Pune</td>");
+
+    $tbody.append('<tr />').children('tr:last')
+    .append("<td>Praveen</td>")
+    .append("<td>praveen@gmail.com</td>")
+    .append("<td>26199</td>")
+    .append("<td>7383769520</td>")
+    .append("<td>Pune</td>");
+
+    $tbody.append('<tr />').children('tr:last')
+    .append("<td>Praveen</td>")
+    .append("<td>praveen@gmail.com</td>")
+    .append("<td>26199</td>")
+    .append("<td>7383769520</td>")
+    .append("<td>Pune</td>");
+
+    $tbody.append('<tr />').children('tr:last')
+    .append("<td>Praveen</td>")
+    .append("<td>praveen@gmail.com</td>")
+    .append("<td>26199</td>")
+    .append("<td>7383769520</td>")
+    .append("<td>Pune</td>");
+
+    $tbody.append('<tr />').children('tr:last')
+    .append("<td>Praveen</td>")
+    .append("<td>praveen@gmail.com</td>")
+    .append("<td>26199</td>")
+    .append("<td>7383769520</td>")
+    .append("<td>Pune</td>");
+
+    $table.appendTo('#dynamicTable');
+
+    //Color all odd rows.
+    $(document).ready(function()
+    {
+    $("#dynamicTable tr:odd").css("background-color", "red");
+    $("#dynamicTable").hide(10000).show(5000);
+    });
+    </script>
+    
+</body>
+</html>

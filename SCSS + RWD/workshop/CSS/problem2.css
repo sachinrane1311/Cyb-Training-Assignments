@@ -1,0 +1,12 @@
+@media (orientation: landscape){
+    body{
+        background: aqua;
+    }
+}
+
+@media (orientation: portrait){
+    body{
+        background: orange;
+    }
+}
+
